@@ -1,0 +1,19 @@
+:root{
+    --branco: #ffffff;
+    --cinza: #CCCCCC;
+    --cinza-escuro: #343A40;
+    --verde: #DAFF01;
+    --roxo: #9353FF;
+    --preto: #000000;
+    --coral: #EE6471;
+    --laranja: #F87F46;
+
+    /*Fonte*/
+    --font-principal: 'Inter', sans-serif;
+    --font-secondary: 'Bigshot One', cursive;
+    --font-terc: 'Noto Serif Lao', serif;
+}
+
+body{
+    font-family: var(--font-principal);
+}
