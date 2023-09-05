@@ -2,6 +2,36 @@
     background-color: black;
 }
 
+.carousel-text{
+    top: 8rem;
+}
+
+.carousel-title-woman{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: right;
+    
+}
+
+.carousel-text-woman{
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: right;
+   }
+
+.carousel-title-man{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.carousel-text-man{
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: left;
+     
+}
+
 .card-buscar{
     display: flex;    
     gap: 2em;
@@ -64,22 +94,22 @@
 .facilidades h2{
     color: white;
     text-align: center;
-    padding: 40px 0;
+    padding: 2.5em 0;
 }
 
 .facilidades-lista{
     display: flex;
     justify-content: center;
-    gap: 32px;
-    padding-bottom: 40px;
+    gap: 2em;
+    padding-bottom: 2.5em;
     margin: auto;
 }
 
 .facilidades-lista_item{
     display: flex;
-    width: 304px;
+    width: 19em;
     align-items: center;
-    gap: 24px;
+    gap: 1.5em;
 }
 
 .facilidades-titulo{
@@ -95,20 +125,20 @@
 }
 
 .novidades{
-    padding: 40px;
-    gap: 16px;
+    padding: 2.5em;
+    gap: 1em;
     margin: 20px 0 20px;
 }
 
 .novidades-div{
     display: flex;
-    width: 729px;
-    padding: 40px;
+    width: 45.5em;
+    padding: 2.5em;
     align-items: center;
     flex-wrap: wrap;
     border: 2px solid black;
     margin: auto;
-    gap: 24px;
+    gap: 1.5em;
 }
 
 .novidades-titulo{
@@ -118,7 +148,7 @@
 }
 
 .novidades-email{
-   width: 550px;
+   width: 34.4em;
    display: flex;
    margin: auto;
 }
@@ -133,7 +163,7 @@
 .rodape{
     background-color: black;
     color: white;
-    padding: 17px 0;
+    padding: 1em 0;
     text-align: center;
     
 }
@@ -141,8 +171,87 @@
 /* -----TABLET------ */
 
 @media screen and (max-width: 768px){
-    header body footer{
+
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+
+   .navbar{
+    flex-wrap: nowrap;
+   }
+
+   .nav-item{
+    font-size: 13px;  
+
+   }
+
+   .border-search{
+    width: 9em;
+   }
+
+   .btn-search{
+    font-size: 13px;
+    }
+
+    .carousel-text{
+        top: 3rem;
+
+}
+    .carousel-title-woman, .carousel-title-man{
+        font-size: 2rem;
+        }
+
+    .carousel-text-woman, .carousel-text-man{
+        font-size: 1rem;
+   }
+
+    .card-buscar{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2.8em;
+        
+       }
+    
+    .card-buscar_categoria {
+        width: 211px;
+    }
+
+    .text-center{
+        margin-bottom: 32px;
+    }
+
+    .produtos{
+        width: 768px;
+        padding-left: 36px;
+    }
+
+    .card-produtos{
+        width: 330px;
+    }
+
+    .card-produtos img{
+        width: 330px;
+        height: 389px;
+}
+    .facilidades{
         width: 768px;
     }
 
+    .facilidades-lista{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .novidades-div{
+        width: 690px;
+}
+}
+
+/* ///////////////////////////////////////////// */
+/* ----- MOBILE ------ */
+
+/* ///////////////////////////////////////////// */
+
+@media screen and (max-width: 375px){
 }
