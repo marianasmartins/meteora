@@ -1,9 +1,20 @@
+  * {
+        box-sizing: border-box;
+    }
+
 .navbar{
     background-color: black;
 }
+.img-mobile{
+    display: none;
+}
+
+.text-color{
+    color: white;
+}
 
 .carousel-text{
-    top: 8rem;
+    top: 50%;
 }
 
 .carousel-title-woman{
@@ -30,6 +41,12 @@
     font-weight: 400;
     text-align: left;
      
+}
+
+.busca-titulo{
+    margin: 72px 32px;
+    font-size: 32px;
+    font-weight: 500;
 }
 
 .card-buscar{
@@ -94,7 +111,7 @@
 .facilidades h2{
     color: white;
     text-align: center;
-    padding: 2.5em 0;
+    padding: 1.5em 0;
 }
 
 .facilidades-lista{
@@ -125,9 +142,9 @@
 }
 
 .novidades{
-    padding: 2.5em;
+    padding: 2.5em 0;
     gap: 1em;
-    margin: 20px 0 20px;
+    margin: 20px 0 ;
 }
 
 .novidades-div{
@@ -164,26 +181,30 @@
     background-color: black;
     color: white;
     padding: 1em 0;
-    text-align: center;
-    
+    display: flex;
+    justify-content: center;
 }
+
+    .text-footer{
+        margin: 0 2px;
+        font-size: 13px;        
+    }
+
+    .carousel-mobile{
+        display: none;
+    }
 
 /* -----TABLET------ */
 
 @media screen and (max-width: 768px){
 
-    *, ::after, ::before {
-        box-sizing: border-box;
+    .navbar{
+        flex-wrap: nowrap;
+   }
+
+    .nav-item{
+        font-size: 13px;
     }
-
-   .navbar{
-    flex-wrap: nowrap;
-   }
-
-   .nav-item{
-    font-size: 13px;  
-
-   }
 
    .border-search{
     width: 9em;
@@ -194,23 +215,27 @@
     }
 
     .carousel-text{
-        top: 3rem;
+        top: 20%;
+    }
 
-}
     .carousel-title-woman, .carousel-title-man{
-        font-size: 2rem;
-        }
+        font-size: 1.5rem;
+    }
 
     .carousel-text-woman, .carousel-text-man{
         font-size: 1rem;
+   }
+
+   .busca-titulo{
+        margin: 40px 32px;
+        font-size: 28px;
    }
 
     .card-buscar{
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 2.8em;
-        
-       }
+    }
     
     .card-buscar_categoria {
         width: 211px;
@@ -222,19 +247,16 @@
 
     .produtos{
         width: 768px;
-        padding-left: 36px;
+        padding: 0 2.4em;
     }
 
     .card-produtos{
-        width: 330px;
+       width: 330px;
     }
 
     .card-produtos img{
-        width: 330px;
-        height: 389px;
-}
-    .facilidades{
-        width: 768px;
+      width: 330px;
+      height: 389px;
     }
 
     .facilidades-lista{
@@ -245,13 +267,126 @@
 
     .novidades-div{
         width: 690px;
-}
+    }
 }
 
 /* ///////////////////////////////////////////// */
 /* ----- MOBILE ------ */
 
-/* ///////////////////////////////////////////// */
-
 @media screen and (max-width: 375px){
-}
+    .navbar{
+        background-color: white;
+    }
+
+    .navbar-mobile_logoMenu{
+        background-color: black;
+    }
+
+    .lista-menu{
+        background-color: #343A40;
+        height: 197px;
+        padding: 42px 24px;
+        width: 45%;     
+                    
+    }
+
+    .color-home{
+        color: #DAFF01;
+        font-weight: 700;
+        font-size: 16px;      
+    }
+
+    .link-menu{
+        font-size: 16px;
+    }
+
+    .navbar-mobile{
+        flex-wrap: wrap;
+    }
+
+    .navbar-mobile_search{
+        justify-content: center;
+        margin: 0;
+        padding: 25px;
+    }
+
+    .text-color{
+        color: black;      
+    }
+
+    .border-search{
+        width: 225px;
+    }
+
+   .btn-search{
+        font-size: 16px;   
+    }
+     
+    .container-mobille{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .img-big{
+        display: none;
+    }
+
+    .img-mobile{
+        display: block;
+    }
+        
+    .carousel-text{
+        top: 50%;
+    }
+
+    .carousel-title-woman, .carousel-title-man{
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .carousel-text-man, .carousel-text-woman {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 45px;         
+    }
+
+    .busca-titulo{
+        margin: 24px;
+        font-size: 24px;
+    }
+       .card-buscar_categoria {
+        width: 146px;
+    }
+
+     .produtos{
+        width: 375px;
+    }
+    
+    .card-produtos img{
+        width: 298px;
+        height: 402px;
+    }
+  
+    .card-text{
+        font-size: 13px;       
+    }
+ 
+    .novidades{
+        margin: 0;
+    }
+    .novidades-div{
+        width: 20em;
+        padding: 24px;
+    }
+
+    .novidades-titulo{
+        font-size: 16px;
+    }
+
+    .rodape{
+        display: block;
+        text-align: center;
+    }
+    
+}   
