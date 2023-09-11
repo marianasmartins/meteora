@@ -1,11 +1,25 @@
-  * {
+ :root{
+    --bs-breakpoint-sm: 375px;
+}
+
+
+ * {
         box-sizing: border-box;
     }
 
 .navbar{
     background-color: black;
 }
-.img-mobile{
+
+.color-home{
+    color: white;
+}
+
+.container-menu{
+    display: none;
+}
+
+.menu-line, .img-mobile{
     display: none;
 }
 
@@ -276,18 +290,55 @@
 @media screen and (max-width: 375px){
     .navbar{
         background-color: white;
+        padding: 0;
+    }
+/* container */
+
+    .container-menu{
+        
+    }
+    .container-menu, .menu-line{
+        display: block;
+   }
+
+/* cabecalho__menu-haburguer */
+    .container-menu__hamburguer{
+        position: relative;           
+   }
+
+    .lista-menu__hamburguer{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 69%;
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+        z-index: 2;
     }
 
+    .link-menu, .menu-line{
+        padding-bottom: 8px;
+    }
+    .close-menu{
+        display: none;
+    }
+
+    .container__button{
+        display: none;
+    }
+
+    .container__button:checked ~ .lista-menu__hamburguer{
+        display: block;
+        background-color: #343A40;
+    }
+
+    .container__button:checked ~ .close-menu{
+        display: block;             
+    }
+    
     .navbar-mobile_logoMenu{
         background-color: black;
-    }
-
-    .lista-menu{
-        background-color: #343A40;
-        height: 197px;
-        padding: 42px 24px;
-        width: 45%;     
-                    
     }
 
     .color-home{
@@ -308,6 +359,7 @@
         justify-content: center;
         margin: 0;
         padding: 25px;
+       
     }
 
     .text-color{
@@ -388,5 +440,7 @@
         display: block;
         text-align: center;
     }
+
+    
     
 }   

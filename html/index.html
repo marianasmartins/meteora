@@ -20,37 +20,62 @@
             <a class="navbar-brand" href="#">
                 <img src="/assets/Logo desktop.png" alt="Logo Meteora">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+            <div class="container-menu">
+                <input type="checkbox" id="menu" class="container__button">
+                <label for="menu">
+                    <span class="container-menu__hamburguer">
+                        <img class="open-menu" src="/assets/icone__menu.svg" alt="Abrir Menu">
+                        <img class="close-menu" src="/assets/menu/marca-cruzada.png" alt="Fechar menu">
+                    </span>
+                </label>
+                <ul class="lista-menu__hamburguer">
+                    <label for="menu" class="link-menu close">
+                        <span class="container-menu__hamburguer">
+                            <img class="open-menu" src="/assets/menu/marca-cruzada.png" alt="Abrir Menu">
+                            <img class="close-menu" src="/assets/menu/marca-cruzada.png" alt="Fechar menu">
+                        </span>
+                    </label>
+                    <li class="nav-item lista-menu__item">
+                        <a class="nav-link color-home link-menu" href="#">Home</a>
+                    </li>
+                    <img class="menu-line" src="/assets/menu/Line 1.png" alt="Linha">
+                    <li class="nav-item lista-menu__item">
+                        <a class="nav-link link-light link-menu" href="#">Nossas lojas</a>
+                    </li>
+                    <img class="menu-line" src="/assets/menu/Line 1.png" alt="Linha">
+                    <li class="nav-item lista-menu__item">
+                        <a class="nav-link link-light link-menu" aria-current="page" href="#">Novidades</a>
+                    </li>
+                    <img class="menu-line" src="/assets/menu/Line 1.png" alt="Linha">
+                    <li class="nav-item lista-menu__item">
+                        <a class="nav-link link-light link-menu" aria-current="page" href="#">Promoções</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img src="/assets/⭐️ icon.svg" alt="icone do menu">
-            </button>
+                <img src="/assets/icone__menu.svg" alt="icone do menu">
+            </button> -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-lg-0 lista-menu">
                     <li class="nav-item">
                         <a class="nav-link color-home" aria-current="page" href="#">Home</a>
                     </li>
-                    <img src="/assets/menu/Line 1.png" alt="Linha">
+                    <img class="menu-line" src="/assets/menu/Line 1.png" alt="Linha">
                     <li class="nav-item">
                         <a class="nav-link link-light link-menu" href="#">Nossas lojas</a>
                     </li>
-                    <img src="/assets/menu/Line 1.png" alt="Linha">
+                    <img class="menu-line" src="/assets/menu/Line 1.png" alt="Linha">
                     <li class="nav-item">
                         <a class="nav-link link-light link-menu" aria-current="page" href="#">Novidades</a>
                     </li>
-                    <img src="/assets/menu/Line 1.png" alt="Linha">
+                    <img class="menu-line" src="/assets/menu/Line 1.png" alt="Linha">
                     <li class="nav-item">
                         <a class="nav-link link-light link-menu" aria-current="page" href="#">Promoções</a>
                     </li>
-
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Home</a></li>
-                        <li><a class="dropdown-item" href="#">Nossas lojas</a></li>
-                        <li><a class="dropdown-item" href="#">Novidades</a></li>
-                        <li><a class="dropdown-item" href="#">Promoções</a></li>
-                    </ul>
-                    </li>
-                </ul>
             </div>
         </div>
         <div class="navbar-mobile_search">
