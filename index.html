@@ -10,6 +10,7 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/var.css">
+    <link rel="stylesheet" href="./style/grid.css">
 
 </head>
 <header>
@@ -90,213 +91,749 @@
 </header>
 
 <body>
-    <section class="carousel-section">
-        <div id="carouselExampleCaptions" class="carousel slide carousel-big">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+    <main>
+        <section class="carousel-section">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-big">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="img-big">
+                            <img src="./assets/carrosel/Banner-desktop-1.png" class="d-block w-100 " alt="Banner">
+                        </div>
+                        <div class="img-mobile">
+                            <img src="./assets/carrosel/banner-mobile1.png" class="d-block w-100 " alt="Banner">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="img-big">
+                            <img src="./assets/carrosel/Banner-desktop-2.png" class="d-block w-100 " alt="Banner">
+                        </div>
+                        <div class="img-mobile">
+                            <img src="./assets/carrosel/banner-mobile2.png" class="d-block w-100 " alt="Banner">
+                        </div>
+                        <div class="carousel-caption carousel-text">
+                            <h5 class="carousel-title-woman">COLEÇÃO ATEMPORAL</h5>
+                            <p class="carousel-text-woman">Estilo e qualidade para durar.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="img-big">
+                            <img src="./assets/carrosel/Banner-desktop-3.png" class="d-block w-100 " alt="Banner">
+                        </div>
+                        <div class="img-mobile">
+                            <img src="./assets/carrosel/banner-mobile3.png" class="d-block w-100 " alt="Banner">
+                        </div>
+                        <div class="carousel-caption carousel-text">
+                            <h5 class="carousel-title-man">COLEÇÃO ATEMPORAL</h5>
+                            <p class="carousel-text-man">Alto impacto visual, baixo impacto ambiental!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="img-big">
-                        <img src="./assets/carrosel/Banner-desktop-1.png" class="d-block w-100 " alt="Banner">
-                    </div>
-                    <div class="img-mobile">
-                        <img src="./assets/carrosel/banner-mobile1.png" class="d-block w-100 " alt="Banner">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="img-big">
-                        <img src="./assets/carrosel/Banner-desktop-2.png" class="d-block w-100 " alt="Banner">
-                    </div>
-                    <div class="img-mobile">
-                        <img src="./assets/carrosel/banner-mobile2.png" class="d-block w-100 " alt="Banner">
-                    </div>
-                    <div class="carousel-caption carousel-text">
-                        <h5 class="carousel-title-woman">COLEÇÃO ATEMPORAL</h5>
-                        <p class="carousel-text-woman">Estilo e qualidade para durar.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="img-big">
-                        <img src="./assets/carrosel/Banner-desktop-3.png" class="d-block w-100 " alt="Banner">
-                    </div>
-                    <div class="img-mobile">
-                        <img src="./assets/carrosel/banner-mobile3.png" class="d-block w-100 " alt="Banner">
-                    </div>
-                    <div class="carousel-caption carousel-text">
-                        <h5 class="carousel-title-man">COLEÇÃO ATEMPORAL</h5>
-                        <p class="carousel-text-man">Alto impacto visual, baixo impacto ambiental!</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
 
-    </section>
+        </section>
 
-    <section class="busca">
-        <h2 class="text-center busca-titulo">Busque por categoria:</h2>
-        <section class="card-buscar">
-            <div class="card card-buscar_categoria border rounded-0">
-                <img src="./assets/busca/card/Categoria camiseta.png" class="card-img-top" alt="Camiseta">
-                <div class="card-body bg-black">
-                    <p class="card-text text-center text-light">Camisetas</p>
+        <section class="busca">
+            <h2 class="text-center busca-titulo">Busque por categoria:</h2>
+            <section class="card-buscar">
+                <div class="card card-buscar_categoria border rounded-0">
+                    <img src="./assets/busca/card/Categoria camiseta.png" class="card-img-top" alt="Camiseta">
+                    <div class="card-body bg-black">
+                        <p class="card-text text-center text-light">Camisetas</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card card-buscar_categoria border rounded-0">
-                <img src="./assets/busca/card/Categoria Bolsas.png" class="card-img-top" alt="Bolsas">
-                <div class="card-body bg-black">
-                    <p class="card-text text-center text-light">Bolsas</p>
+                <div class="card card-buscar_categoria border rounded-0">
+                    <img src="./assets/busca/card/Categoria Bolsas.png" class="card-img-top" alt="Bolsas">
+                    <div class="card-body bg-black">
+                        <p class="card-text text-center text-light">Bolsas</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card card-buscar_categoria border rounded-0">
-                <img src="./assets/busca/card/Categoria calçados.png" class="card-img-top" alt="Calçados">
-                <div class="card-body bg-black">
-                    <p class="card-text text-center text-light">Calçados</p>
+                <div class="card card-buscar_categoria border rounded-0">
+                    <img src="./assets/busca/card/Categoria calçados.png" class="card-img-top" alt="Calçados">
+                    <div class="card-body bg-black">
+                        <p class="card-text text-center text-light">Calçados</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card card-buscar_categoria border rounded-0">
-                <img src="./assets/busca/card/Categoria calças.png" class="card-img-top" alt="Calças">
-                <div class="card-body bg-black">
-                    <p class="card-text text-center text-light">Calças</p>
+                <div class="card card-buscar_categoria border rounded-0">
+                    <img src="./assets/busca/card/Categoria calças.png" class="card-img-top" alt="Calças">
+                    <div class="card-body bg-black">
+                        <p class="card-text text-center text-light">Calças</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card card-buscar_categoria border rounded-0">
-                <img src="./assets/busca/card/Categoria Casacos.png" class="card-img-top" alt="Casacos">
-                <div class="card-body bg-black">
-                    <p class="card-text text-center text-light">Casacos</p>
+                <div class="card card-buscar_categoria border rounded-0">
+                    <img src="./assets/busca/card/Categoria Casacos.png" class="card-img-top" alt="Casacos">
+                    <div class="card-body bg-black">
+                        <p class="card-text text-center text-light">Casacos</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card card-buscar_categoria border rounded-0 ">
-                <img src="./assets/busca/card/Categoria óculos.png" class="card-img-top" alt="Óculos">
-                <div class="card-body bg-black">
-                    <p class="card-text text-center text-light">Óculos</p>
+                <div class="card card-buscar_categoria border rounded-0 ">
+                    <img src="./assets/busca/card/Categoria óculos.png" class="card-img-top" alt="Óculos">
+                    <div class="card-body bg-black">
+                        <p class="card-text text-center text-light">Óculos</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="titulo_produtos">
+            <h2 class="text-center m-xl-5 h2-produtos">Produtos que estão bombando!</h2>
+            <div class="produtos">
+                <div class="card card-produtos ">
+                    <img src="./assets/produtos/Card camiseta.png" class="card-img-top card-img-produtos"
+                        alt="Camiseta conforto">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Conforto</h5>
+                        <p class="card-text">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão.
+                            Modelagem unissex.</p>
+                        <p class="valor">R$ 70,00</p>
+                        <a data-bs-toggle="modal" data-bs-target="#modal-camiseta" href="#" class="card-link">Ver
+                            mais</a>
+                    </div>
+                </div>
+                <div class="card card-produtos">
+                    <img src="./assets/produtos/Card calça.png" class="card-img-top card-img-produtos"
+                        alt="Calça alfaiataria">
+                    <div class="card-body">
+                        <h5 class="card-title">Calça Alfaiataria</h5>
+                        <p class="card-text">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
+                        <p class="valor">R$ 180,00</p>
+                        <a data-bs-toggle="modal" data-bs-target="#modal-calça" href="#" class="card-link">Ver
+                            mais</a>
+                    </div>
+                </div>
+                <div class="card card-produtos">
+                    <img src="./assets/produtos/Card tenis.png" class="card-img-top card-img-produtos"
+                        alt="Tênis Chunky">
+                    <div class="card-body">
+                        <h5 class="card-title">Tênis Chunky</h5>
+                        <p class="card-text">Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.
+                        </p>
+                        <p class="valor">R$ 250,00</p>
+                        <a data-bs-toggle="modal" data-bs-target="#modal-tenis" href="#" class="card-link">Ver mais</a>
+                    </div>
+                </div>
+                <div class="card card-produtos">
+                    <img src="./assets/produtos/Card jaqueta jeans.png" class="card-img-top card-img-produtos"
+                        alt="Jaqueta Jeans">
+                    <div class="card-body">
+                        <h5 class="card-title">Jaqueta Jeans</h5>
+                        <p class="card-text">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+                        <p class="valor">R$ 150,00</p>
+                        <a data-bs-toggle="modal" data-bs-target="#modal-jaqueta" href="#" class="card-link">Ver
+                            mais</a>
+                    </div>
+                </div>
+                <div class="card card-produtos">
+                    <img src="./assets/produtos/Cards óculos.png" class="card-img-top card-img-produtos"
+                        alt="Óculos Redondo">
+                    <div class="card-body">
+                        <h5 class="card-title">Óculos Redondo</h5>
+                        <p class="card-text">Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
+                        <p class="valor">R$ 120,00</p>
+                        <a data-bs-toggle="modal" data-bs-target="#modal-oculos" href="#" class="card-link">Ver mais</a>
+                    </div>
+                </div>
+                <div class="card card-produtos">
+                    <img src="./assets/produtos/Card bolsa.png" class="card-img-top card-img-produtos"
+                        alt="Bolsa coringa">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolsa coringa</h5>
+                        <p class="card-text">Bolsa camel em couro sintético de alta duração. Ideal para acompanhar
+                            você
+                            por
+                            uma vida!</p>
+                        <p class="valor">R$ 120,00</p>
+                        <a data-bs-toggle="modal" data-bs-target="#modal-bolsa" href="#" class="card-link">Ver mais</a>
+                    </div>
                 </div>
             </div>
         </section>
-    </section>
 
+        <section class="facilidades">
+            <h2>Conheça todas as nossas facilidades</h2>
+            <div class="facilidades-lista">
+                <div class="facilidades-lista_item">
+                    <img src="./assets/facilidades/x-diamond.png" alt="Pague pelo pix">
+                    <div>
+                        <h6 class="facilidades-titulo">PAGUE PELO PIX</h6>
+                        <p class="facilidades-texto">Ganhe 5% OFF em pagamentos via PIX</p>
+                    </div>
+                </div>
+                <div class="facilidades-lista_item">
+                    <img src="./assets/facilidades/arrow-repeat.png" alt="Troca grátis">
+                    <div>
+                        <h6 class="facilidades-titulo">TROCA GRÁTIS</h6>
+                        <p class="facilidades-texto">Fique livre para trocar em até 30 dias.</p>
+                    </div>
+                </div>
+                <div class="facilidades-lista_item">
+                    <img src="./assets/facilidades/flower1.png" alt="SUSTENTABILIDADE">
+                    <div>
+                        <h6 class="facilidades-titulo">SUSTENTABILIDADE</h6>
+                        <p class="facilidades-texto">Moda responsável, que respeita o meio ambiente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="titulo_produtos">
-        <h2 class="text-center m-xl-5 h2-produtos">Produtos que estão bombando!</h2>
-        <div class="produtos">
-            <div class="card card-produtos ">
-                <img src="./assets/produtos/Card camiseta.png" class="card-img-top card-img-produtos"
-                    alt="Camiseta conforto">
-                <div class="card-body">
-                    <h5 class="card-title">Camiseta Conforto</h5>
-                    <p class="card-text">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão.
-                        Modelagem unissex.</p>
-                    <p class="valor">R$ 70,00</p>
-                    <a href="#" class="card-link">Ver mais</a>
+        <section class="novidades">
+            <div class="novidades-div">
+                <h2 class="novidades-titulo">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira
+                    compra?
+                    Cadastre-se!</h2>
+                <div class="novidades-email">
+                    <input type="email" class="form-control" id="colFormLabelSm" placeholder="Digite seu email">
+                    <button type="submit" class="btn-email btn btn-primary">Enviar</button>
                 </div>
             </div>
-            <div class="card card-produtos">
-                <img src="./assets/produtos/Card calça.png" class="card-img-top card-img-produtos"
-                    alt="Calça alfaiataria">
-                <div class="card-body">
-                    <h5 class="card-title">Calça Alfaiataria</h5>
-                    <p class="card-text">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
-                    <p class="valor">R$ 180,00</p>
-                    <a href="#" class="card-link">Ver mais</a>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="modal-camiseta" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-black">
+                    <img src="./assets/modal/check-circle.png" alt="Ícone de check">
+                    <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Confira detalhes sobre o
+                        produto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img
+                            src="./assets/modal/close.png" alt="Fechar janela" class="modal-close"></button>
                 </div>
-            </div>
-            <div class="card card-produtos">
-                <img src="./assets/produtos/Card tenis.png" class="card-img-top card-img-produtos" alt="Tênis Chunky">
-                <div class="card-body">
-                    <h5 class="card-title">Tênis Chunky</h5>
-                    <p class="card-text">Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.
-                    </p>
-                    <p class="valor">R$ 250,00</p>
-                    <a href="#" class="card-link">Ver mais</a>
-                </div>
-            </div>
-            <div class="card card-produtos">
-                <img src="./assets/produtos/Card jaqueta jeans.png" class="card-img-top card-img-produtos"
-                    alt="Jaqueta Jeans">
-                <div class="card-body">
-                    <h5 class="card-title">Jaqueta Jeans</h5>
-                    <p class="card-text">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
-                    <p class="valor">R$ 150,00</p>
-                    <a href="#" class="card-link">Ver mais</a>
-                </div>
-            </div>
-            <div class="card card-produtos">
-                <img src="./assets/produtos/Cards óculos.png" class="card-img-top card-img-produtos"
-                    alt="Óculos Redondo">
-                <div class="card-body">
-                    <h5 class="card-title">Óculos Redondo</h5>
-                    <p class="card-text">Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
-                    <p class="valor">R$ 120,00</p>
-                    <a href="#" class="card-link">Ver mais</a>
-                </div>
-            </div>
-            <div class="card card-produtos">
-                <img src="./assets/produtos/Card bolsa.png" class="card-img-top card-img-produtos" alt="Bolsa coringa">
-                <div class="card-body">
-                    <h5 class="card-title">Bolsa coringa</h5>
-                    <p class="card-text">Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você
-                        por
-                        uma vida!</p>
-                    <p class="valor">R$ 120,00</p>
-                    <a href="#" class="card-link">Ver mais</a>
+                <div class="container-img-descricao">
+                    <img src="./assets/produtos/Card camiseta.png" alt="Camiseta" class="modal-img">
+                    <div class="modal-body modal-container">
+                        <div class="descricao">
+                            <h5 class="descricao-title">Camiseta Conforto</h5>
+                            <p class="descricao-text">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o
+                                verão.
+                                Modelagem unissex.</p>
+                            <hr>
+                            <p class="descricao-valor">R$ 70,00</p>
+                            <p class="descricao-fornecedor">Vendido e entregue por Riachuelo</p>
+                            <hr>
+                        </div>
+                        <div class="cores">
+                            <h6 class="modal-title__cores">Cores:</h6>
+                            <div class="d-flex">
+                                <div class="form-check d-flex flex-column color-blue">
+                                    <input class="color-blue form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+
+                                    <label class="form-check-label descricao-text" for="flexRadioDefault1">
+                                        Azul claro
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="color-offwhite form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+
+                                    <label class=" form-check-label descricao-text" for="flexRadioDefault2">
+                                        Offwhite
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="color-black form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3" checked>
+
+                                    <label class="form-check-label descricao-text" for="flexRadioDefault3">
+                                        Preto
+                                    </label>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="tamanho">
+                            <h5 class="modal-title__tamanho">Tamanho:</h5>
+                            <div class="d-flex">
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho1">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho1">
+                                        PP
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho2">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho2">
+                                        P
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho3">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho3">
+                                        M
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho4">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho4">
+                                        G
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho5">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho5">
+                                        GG
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer sacola">
+                            <button type="button" class="btn btn-primary btn-email">Adicionar à sacola</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="facilidades">
-        <h2>Conheça todas as nossas facilidades</h2>
-        <div class="facilidades-lista">
-            <div class="facilidades-lista_item">
-                <img src="./assets/facilidades/x-diamond.png" alt="Pague pelo pix">
-                <div>
-                    <h6 class="facilidades-titulo">PAGUE PELO PIX</h6>
-                    <p class="facilidades-texto">Ganhe 5% OFF em pagamentos via PIX</p>
+    <div class="modal" id="modal-calça" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-black">
+                    <img src="./assets/modal/check-circle.png" alt="Ícone de check">
+                    <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Confira detalhes sobre o
+                        produto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img
+                            src="./assets/modal/close.png" alt="Fechar janela" class="modal-close"></button>
                 </div>
-            </div>
-            <div class="facilidades-lista_item">
-                <img src="./assets/facilidades/arrow-repeat.png" alt="Troca grátis">
-                <div>
-                    <h6 class="facilidades-titulo">TROCA GRÁTIS</h6>
-                    <p class="facilidades-texto">Fique livre para trocar em até 30 dias.</p>
-                </div>
-            </div>
-            <div class="facilidades-lista_item">
-                <img src="./assets/facilidades/flower1.png" alt="SUSTENTABILIDADE">
-                <div>
-                    <h6 class="facilidades-titulo">SUSTENTABILIDADE</h6>
-                    <p class="facilidades-texto">Moda responsável, que respeita o meio ambiente.</p>
+                <div class="container-img-descricao">
+                    <img src="./assets/produtos/Card calça.png" alt="Calça" class="modal-img">
+                    <div class="modal-body modal-container">
+                        <div class="descricao">
+                            <h5 class="descricao-title">Calça Alfaiataria</h5>
+                            <p class="descricao-text">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
+                            <hr>
+                            <p class="descricao-valor">R$ 180,00</p>
+                            <p class="descricao-fornecedor">Vendido e entregue por Riachuelo</p>
+                            <hr>
+                        </div>
+                        <div class="cores">
+                            <h6 class="modal-title__cores">Cores:</h6>
+                            <div class="d-flex">
+                                <div class="form-check d-flex flex-column color-blue">
+                                    <input class="color-blue form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+
+                                    <label class="form-check-label descricao-text" for="flexRadioDefault1">
+                                        Azul claro
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="color-offwhite form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+
+                                    <label class=" form-check-label descricao-text" for="flexRadioDefault2">
+                                        Offwhite
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="color-black form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3" checked>
+
+                                    <label class="form-check-label descricao-text" for="flexRadioDefault3">
+                                        Preto
+                                    </label>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="tamanho">
+                            <h5 class="modal-title__tamanho">Tamanho:</h5>
+                            <div class="d-flex">
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho1">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho1">
+                                        36
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho2">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho2">
+                                        38
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho3">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho3">
+                                        40
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho4">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho4">
+                                        42
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho5">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho5">
+                                        44
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer sacola">
+                            <button type="button" class="btn btn-primary btn-email">Adicionar à sacola</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="novidades">
-        <div class="novidades-div">
-            <h2 class="novidades-titulo">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira
-                compra?
-                Cadastre-se!</h2>
-            <div class="novidades-email">
-                <input type="email" class="form-control" id="colFormLabelSm" placeholder="Digite seu email">
-                <button type="submit" class="btn-email btn btn-primary">Enviar</button>
+    <div class="modal" id="modal-tenis" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-black">
+                    <img src="./assets/modal/check-circle.png" alt="Ícone de check">
+                    <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Confira detalhes sobre o
+                        produto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img
+                            src="./assets/modal/close.png" alt="Fechar janela" class="modal-close"></button>
+                </div>
+                <div class="container-img-descricao">
+                    <img src="./assets/produtos/Card tenis.png" alt="Tenis" class="modal-img">
+                    <div class="modal-body modal-container">
+                        <div class="descricao">
+                            <h5 class="descricao-title">Tênis Chunky</h5>
+                            <p class="descricao-text">Snicker casual com solado mais alto e modelagem robusta. Modelo
+                                unissex.</p>
+                            <hr>
+                            <p class="descricao-valor">R$ 250,00</p>
+                            <p class="descricao-fornecedor">Vendido e entregue por Riachuelo</p>
+                            <hr>
+                        </div>
+                        <div class="cores">
+                            <h6 class="modal-title__cores">Cores:</h6>
+                            <div class="d-flex">
+                                <div class="form-check d-flex flex-column color-blue">
+                                    <input class="color-blue form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+
+                                    <label class="form-check-label descricao-text" for="flexRadioDefault1">
+                                        Azul claro
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="color-offwhite form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+
+                                    <label class=" form-check-label descricao-text" for="flexRadioDefault2">
+                                        Offwhite
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="color-black form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3" checked>
+
+                                    <label class="form-check-label descricao-text" for="flexRadioDefault3">
+                                        Preto
+                                    </label>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="tamanho">
+                            <h5 class="modal-title__tamanho">Tamanho:</h5>
+                            <div class="d-flex">
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho1">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho1">
+                                        36
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho2">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho2">
+                                        37
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho3">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho3">
+                                        38
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho4">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho4">
+                                        39
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho5">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho5">
+                                        40
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer sacola">
+                            <button type="button" class="btn btn-primary btn-email">Adicionar à sacola</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <div class="modal" id="modal-jaqueta" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-black">
+                    <img src="./assets/modal/check-circle.png" alt="Ícone de check">
+                    <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Confira detalhes sobre o
+                        produto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img
+                            src="./assets/modal/close.png" alt="Fechar janela" class="modal-close"></button>
+                </div>
+                <div class="container-img-descricao">
+                    <img src="./assets/produtos/Card jaqueta jeans.png" alt="Tenis" class="modal-img">
+                    <div class="modal-body modal-container">
+                        <div class="descricao">
+                            <h5 class="descricao-title">Jaqueta Jeans</h5>
+                            <p class="descricao-text">Modelo unissex oversized com gola de camurça. Atemporal e
+                                autêntica!</p>
+                            <hr>
+                            <p class="descricao-valor">R$ 150,00</p>
+                            <p class="descricao-fornecedor">Vendido e entregue por Riachuelo</p>
+                            <hr>
+                        </div>
+                        <div class="cores">
+                            <h6 class="modal-title__cores">Cores:</h6>
+                            <div class="d-flex">
+                                <div class="form-check d-flex flex-column color-blue">
+                                    <input class="color-blue form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+
+                                    <label class="form-check-label descricao-text" for="flexRadioDefault1">
+                                        Azul claro
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="color-offwhite form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+
+                                    <label class=" form-check-label descricao-text" for="flexRadioDefault2">
+                                        Offwhite
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="color-black form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3" checked>
+
+                                    <label class="form-check-label descricao-text" for="flexRadioDefault3">
+                                        Preto
+                                    </label>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="tamanho">
+                            <h5 class="modal-title__tamanho">Tamanho:</h5>
+                            <div class="d-flex">
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho1">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho1">
+                                        PP
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho2">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho2">
+                                        P
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho3">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho3">
+                                        M
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho4">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho4">
+                                        G
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="form-check-input" type="radio" name="flexRadioTamanho"
+                                        id="flexRadioTamanho5">
+                                    <label class="form-check-label descricao-text" for="flexRadioTamanho5">
+                                        GG
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer sacola">
+                            <button type="button" class="btn btn-primary btn-email">Adicionar à sacola</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-oculos" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-black">
+                    <img src="./assets/modal/check-circle.png" alt="Ícone de check">
+                    <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Confira detalhes sobre o
+                        produto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img
+                            src="./assets/modal/close.png" alt="Fechar janela" class="modal-close"></button>
+                </div>
+                <div class="container-img-descricao">
+                    <img src="./assets/produtos/Cards óculos.png" alt="Oculos" class="modal-img">
+                    <div class="modal-body modal-container">
+                        <div class="descricao">
+                            <h5 class="descricao-title">Óculos Redondo</h5>
+                            <p class="descricao-text">Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
+                            <hr>
+                            <p class="descricao-valor">R$ 120,00</p>
+                            <p class="descricao-fornecedor">Vendido e entregue por Riachuelo</p>
+                            <hr>
+                        </div>
+                        <div class="cores">
+                            <h6 class="modal-title__cores">Cores:</h6>
+                            <div class="d-flex">
+                                <div class="form-check d-flex flex-column color-blue">
+                                    <input class="color-blue form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+
+                                    <label class="form-check-label descricao-text" for="flexRadioDefault1">
+                                        Azul claro
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="color-offwhite form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+
+                                    <label class=" form-check-label descricao-text" for="flexRadioDefault2">
+                                        Offwhite
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="color-black form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3" checked>
+
+                                    <label class="form-check-label descricao-text" for="flexRadioDefault3">
+                                        Preto
+                                    </label>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="modal-footer sacola">
+                        <button type="button" class="btn btn-primary btn-email">Adicionar à sacola</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal" id="modal-bolsa" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-black">
+                    <img src="./assets/modal/check-circle.png" alt="Ícone de check">
+                    <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Confira detalhes sobre o
+                        produto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img
+                            src="./assets/modal/close.png" alt="Fechar janela" class="modal-close"></button>
+                </div>
+                <div class="container-img-descricao">
+                    <img src="./assets/produtos/Card bolsa.png" alt="Oculos" class="modal-img">
+                    <div class="modal-body modal-container">
+                        <div class="descricao">
+                            <h5 class="descricao-title">Bolsa coringa</h5>
+                            <p class="descricao-text">Bolsa camel em couro sintético de alta duração. Ideal para
+                                acompanhar você por uma vida!
+                            </p>
+                            <hr>
+                            <p class="descricao-valor">R$ 120,00</p>
+                            <p class="descricao-fornecedor">Vendido e entregue por Riachuelo</p>
+                            <hr>
+                        </div>
+                        <div class="cores">
+                            <h6 class="modal-title__cores">Cores:</h6>
+                            <div class="d-flex">
+                                <div class="form-check d-flex flex-column color-blue">
+                                    <input class="color-blue form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+
+                                    <label class="form-check-label descricao-text" for="flexRadioDefault1">
+                                        Caramelo
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="color-offwhite form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+
+                                    <label class=" form-check-label descricao-text" for="flexRadioDefault2">
+                                        Offwhite
+                                    </label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <input class="color-black form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3" checked>
+
+                                    <label class="form-check-label descricao-text" for="flexRadioDefault3">
+                                        Preto
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer sacola">
+                            <button type="button" class="btn btn-primary btn-email">Adicionar à sacola</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="rodape">
         <p class="text-footer">2023 © Desenvolvido por Mariana |

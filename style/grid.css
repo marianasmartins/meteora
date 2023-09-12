@@ -1,0 +1,63 @@
+.container-img-descricao{
+    display: flex;
+    gap: 8px;   
+}
+
+.modal-img{
+    width: 55%;
+    height: 80%;
+    padding: 16px 0 16px 16px;
+}
+
+.modal-container{
+    padding-left: 0;
+    width: 35%;
+}
+
+.descricao-title{
+    color: #212529;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.descricao-text{
+    color: #212529;
+    font-size: 13px;
+}
+
+.descricao-valor{
+    font-size: 20px;
+    color: #212529;
+    font-weight: 500;
+}
+
+.descricao-fornecedor{
+    font-size: 13px;
+    font-weight: 400;
+    color: #ADB5BD;
+    line-height: 20px;
+
+}
+
+.modal-title__cores, .modal-title__tamanho{
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #212529;
+}
+
+.form-check{
+    align-items: center;
+    padding: 0 0.5em 0;
+}
+
+.form-check .form-check-input{
+    margin-left: 0;
+}
+
+.form-check-input:checked {
+    background-color: #9353FF;;
+    border-color: gray;
+}
+

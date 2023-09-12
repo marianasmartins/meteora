@@ -228,6 +228,25 @@
         display: none;
     }
 
+    .modal-header{
+        display: flex;
+        align-items: center;      
+        gap: 20px;
+    }
+
+    .modal-body {
+        gap: 2px
+    }
+
+    .modal-img{
+        width: 50%;
+    }
+
+    .modal-rodape{
+        display: none;
+    }
+
+
 /* -----TABLET------ */
 
 @media screen and (max-width: 768px){
