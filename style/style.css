@@ -314,21 +314,17 @@
 /* ----- MOBILE ------ */
 
 @media screen and (max-width: 576px){
+
     .navbar{
         background-color: white;
         padding: 0;
-        
+        width: 100%;        
     }
-/* container */
 
-    .container-menu{
-        
-    }
     .container-menu, .menu-line{
         display: block;
    }
 
-/* cabecalho__menu-haburguer */
     .container-menu__hamburguer{
         position: relative;           
    }
@@ -347,6 +343,7 @@
     .link-menu, .menu-line{
         padding-bottom: 8px;
     }
+
     .close-menu{
         display: none;
     }
@@ -361,7 +358,7 @@
     }
 
     .container__button:checked ~ .close-menu{
-        display: block;             
+        display: flex;
     }
     
     .navbar-mobile_logoMenu{
@@ -382,23 +379,18 @@
         flex-wrap: wrap;
     }
 
-    .navbar-mobile_search{
+    .navbar-mobile__search{
         justify-content: center;
-        margin: 0;
+        margin: 0 auto;
         padding: 25px;
-       
     }
 
     .text-color{
         color: black;      
     }
 
-    .border-search{
-        width: 225px;
-    }
-
    .btn-search{
-        font-size: 16px;   
+        font-size: 16px;  
     }
      
     .container-mobille{
@@ -434,17 +426,9 @@
         margin: 24px;
         font-size: 24px;
     }
-       .card-buscar_categoria {
-        width: 146px;
-    }
-
-     .produtos{
-        width: 375px;
-        
-    }
     
     .card-produtos img{
-        width: 298px;
+        width: 100%;
         height: 402px;
     }
   
@@ -455,8 +439,9 @@
     .novidades{
         margin: 0;
     }
+
     .novidades-div{
-        width: 20em;
+        width: 70%;
         padding: 24px;
     }
 
@@ -468,7 +453,5 @@
         display: block;
         text-align: center;
     }
-
-    
-    
+  
 }   
