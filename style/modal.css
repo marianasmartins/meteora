@@ -61,6 +61,21 @@
     border-color: gray;
 }
 
+.color-blue{
+    background-color: rgb(0, 119, 255);
+}
+
+.color-offwhite{
+    background-color: blanchedalmond;
+}
+
+.color-black{
+    background-color: black;
+}
+
+.color-caramelo{
+    background-color: rgba(165, 81, 42, 0.678);
+}
 
 @media screen and (max-width: 576px){
     .container-img-descricao{
